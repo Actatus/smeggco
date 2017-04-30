@@ -1,0 +1,321 @@
+    /*
+Theme Name: SmeggCo
+Author: Fred Stollery
+Description: Smeggco Template. Why are you even looking at this?
+Version: 0.0.1
+Tags: bootstrap, Smeggco
+*/
+
+
+body {
+	background-image: url('images/background.png');
+	background-position: center top;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-size: cover;
+	word-wrap: break-word; 
+	height: 100%;
+}
+
+header {
+	background-color: #222;
+	color: #ccc;
+	
+}
+
+.row {
+	margin-right: 0px; 
+}
+#logo img {
+	max-height: 355px;
+	max-width: 500px;
+	float: left;
+}
+@media only screen and (max-width: 500px){
+	#logo img { 
+		width: 100%;
+	}
+}
+#site_name{
+	display: inline;
+	
+}
+
+#site_name h2{
+	margin: 10px 0 0 0;
+}
+
+header .spacer {
+	margin: 0 50px;
+}
+
+header .search {
+	float: right;
+	clear: both;
+	padding-top: 5px;
+}
+
+span.screen-reader-text{
+	display: none;
+}
+
+.search .search-form label .search-submit {
+	color: #222;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #3065ba;
+}
+.nav div ul li .sub-menu{
+	display: none;
+	position: absolute;
+}
+
+.nav div ul li ul.sub-menu li {
+	position: relative;
+	margin-left: 0px;
+	margin-top: 5px;
+	min-width: 200px;
+}
+
+.nav div ul li .sub-menu li a{
+	margin-top:5px;
+}
+
+.nav div #menu-navigation .menu-item:hover .sub-menu{
+	display: block;
+	padding: 0; 
+
+}
+
+ul#menu-navigation{
+	padding-left: 0px;
+}
+
+div .nav{
+	list-style: none;
+	margin-bottom: 0px;
+	display: inline;
+	float: right;
+	padding-right: 0px;
+	padding-left: 0px;
+	
+}
+
+/* Taken from Tania Rascia */
+div .nav li {
+	position: relative;
+    display: inline-block;
+    font-size: 16px;
+	margin-left: 10px;
+}
+
+div .nav li a {
+	color: #ccc;
+}
+
+.pod_box{
+	position: relative;
+}
+
+#pnp_desc{
+	position: absolute;
+	display: none;
+	bottom: 1px;
+	padding: 0;
+	max-width:90%;
+	max-height: 250px;
+	background-color: rgba(51,51,51,.8)
+}
+
+#tfg_desc p{
+	color: #ccc;
+	text-align: center;
+}
+
+#tfg_desc{
+	position: absolute;
+	display: none;
+	bottom: 1px;
+	padding: 0;
+	max-width:90%;
+	max-height: 250px;
+	background-color: rgba(51,51,51,.8)
+}
+
+#pnp_desc p{
+	color: #ccc;
+	text-align: center;
+}
+.pod_image{
+	margin-top: 30px;
+	min-height: 250px;
+	max-height: 250px;
+	max-width: 100%;
+	box-shadow: 0px 1px 0px 1px #222;
+	
+}
+
+main{
+	margin-top: 50px;
+	min-height: 100%;
+	padding-bottom: 200px;
+}
+
+div.row.content_block{
+	margin-top: 50px;
+	padding-left: 20px;
+}
+
+.blog_post{
+	padding-top: 5px;
+	background-color: #333;
+	box-shadow: 0px 1px 0px 1px #222 inset;
+	color: #ccc;
+}
+
+.blog_post > :last-child{
+	margin-bottom: 0px;
+}
+
+.blog_post .innards {
+	margin-left: 10px;
+}
+
+.innards div {
+	clear: right;
+}
+
+.innards img {
+	float: left;
+	margin-right: 20px;
+}
+
+.innards .more-link {
+	margin-left: 50%;
+	display: block;
+}
+footer{
+	padding-top: 100px;
+}
+footer #footer{
+	bottom: 0;
+	background-color: #333;
+	color: #ccc;
+	position: relative;
+	height: 150px;
+	padding-top: 20px;
+	
+}
+
+#sitemap{
+	padding-left: 30px;
+}
+
+#menu-navigation-1{
+	list-style: none;
+	
+}
+
+#menu-navigation-1 > li{
+	float: left;
+	clear: right;
+	margin-left: 20px;
+}
+#menu-navigation-1 li .sub-menu{
+	list-style: none;
+	padding-left: 0;
+}
+#menu-navigation-1 li .sub-menu > li{
+	display: block;
+}
+
+#twitch iframe{
+	border-width: 1px;
+	border-color: white;
+}
+
+.row + .video{
+	margin-top: 30px;
+}
+
+.video p iframe {
+	max-width: 100%;
+	max-height:100%;
+	border-width: 1px;
+	border-color: white;
+}
+
+#social_media {
+	display: inline-block;
+	
+}
+
+#social_media img{
+	display: inline;
+	max-width: 50px;
+	max-height: 50px;
+	margin-right: 10px;
+}
+
+/* Articles Home CSS */
+
+.carousel-inner > .active{
+	background-color:#111;
+}
+
+.carousel-inner > .item > img{
+	margin: auto;
+	width: 50%;
+	height: 300px;
+}
+
+.carousel-caption {
+	background-color: rgba(51,51,51,.3);
+	
+}
+
+#thumbnail {
+	float: left;
+	margin-right: 5px;
+}
+
+#posting_content {
+	margin-left: 5px;
+}
+
+/* Podcasts */
+
+#pod_page .row {
+	margin-top: 10px;
+}
+
+.pod_banner{
+	margin-top: 30px;
+	min-height: 250px;
+	max-height: 100%;
+	max-width: 100%;
+	box-shadow: 0px 1px 0px 1px #222;
+	
+}
+
+.pod_desc{
+	color: #ccc;
+	font-size: 20px;
+	background-color: rgba(51,51,51,.8);
+}
+
+
+div.episode {
+	background-color: #222;
+}
+
+div.episode {
+	color: #ccc;
+}
+
