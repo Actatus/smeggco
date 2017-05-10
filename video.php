@@ -20,7 +20,7 @@ Template Name: Videos
 	</div>
 	<div class = 'row content_block'>
 		<div class = 'col-lg-8 col-xs-12'>
-			<?php $games_query = new WP_Query (array ('tags' => 'Gaming'));
+			<?php $games_query = new WP_Query (array ('tag' => 'Gaming'));
 				$post_count = 0;
 				if ($games_query->have_posts()){
 					while ($games_query->have_posts()){
@@ -46,7 +46,7 @@ Template Name: Videos
 							<p> Sorry, that's all for now! </p>
 						</div>
 					</div>
-				<?php }?>
+				<?php wp_reset_postdata;}?>
 		</div>
 		<div class = 'col-lg-4 col-xs-12'>
 			<?php 
@@ -58,6 +58,7 @@ Template Name: Videos
 					<div class = 'row video'><?php the_content(); ?></div>
 						
 				<? $postcount_vids++;
+					wp_reset_postdata;
 				}
 			}?>
 		</div>
